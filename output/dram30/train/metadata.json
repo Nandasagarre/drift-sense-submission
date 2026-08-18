@@ -1,0 +1,392 @@
+[
+  {
+    "pair_id": "author_0",
+    "style": "dram",
+    "gt_center_px": [
+      203.6,
+      840.4
+    ],
+    "ref_path": "./output/dram30/train/reference/00000.png",
+    "search_path": "./output/dram30/train/search/00000.png",
+    "noise_params": {
+      "preset_name": "dram_1x"
+    }
+  },
+  {
+    "pair_id": "author_1",
+    "style": "dram",
+    "gt_center_px": [
+      898.2,
+      499.4
+    ],
+    "ref_path": "./output/dram30/train/reference/00001.png",
+    "search_path": "./output/dram30/train/search/00001.png",
+    "noise_params": {
+      "preset_name": "dram_1x"
+    }
+  },
+  {
+    "pair_id": "author_2",
+    "style": "dram",
+    "gt_center_px": [
+      459.9,
+      193.4
+    ],
+    "ref_path": "./output/dram30/train/reference/00002.png",
+    "search_path": "./output/dram30/train/search/00002.png",
+    "noise_params": {
+      "preset_name": "dram_1x"
+    }
+  },
+  {
+    "pair_id": "author_3",
+    "style": "dram",
+    "gt_center_px": [
+      618.2,
+      916.1
+    ],
+    "ref_path": "./output/dram30/train/reference/00003.png",
+    "search_path": "./output/dram30/train/search/00003.png",
+    "noise_params": {
+      "preset_name": "dram_1x"
+    }
+  },
+  {
+    "pair_id": "author_4",
+    "style": "dram",
+    "gt_center_px": [
+      93.4,
+      414.8
+    ],
+    "ref_path": "./output/dram30/train/reference/00004.png",
+    "search_path": "./output/dram30/train/search/00004.png",
+    "noise_params": {
+      "preset_name": "dram_1x"
+    }
+  },
+  {
+    "pair_id": "author_5",
+    "style": "dram",
+    "gt_center_px": [
+      698.6,
+      927.4
+    ],
+    "ref_path": "./output/dram30/train/reference/00005.png",
+    "search_path": "./output/dram30/train/search/00005.png",
+    "noise_params": {
+      "preset_name": "dram_dense"
+    }
+  },
+  {
+    "pair_id": "author_6",
+    "style": "dram",
+    "gt_center_px": [
+      221.4,
+      490.0
+    ],
+    "ref_path": "./output/dram30/train/reference/00006.png",
+    "search_path": "./output/dram30/train/search/00006.png",
+    "noise_params": {
+      "preset_name": "dram_dense"
+    }
+  },
+  {
+    "pair_id": "author_7",
+    "style": "dram",
+    "gt_center_px": [
+      291.6,
+      300.7
+    ],
+    "ref_path": "./output/dram30/train/reference/00007.png",
+    "search_path": "./output/dram30/train/search/00007.png",
+    "noise_params": {
+      "preset_name": "dram_dense"
+    }
+  },
+  {
+    "pair_id": "author_8",
+    "style": "dram",
+    "gt_center_px": [
+      804.2,
+      472.1
+    ],
+    "ref_path": "./output/dram30/train/reference/00008.png",
+    "search_path": "./output/dram30/train/search/00008.png",
+    "noise_params": {
+      "preset_name": "dram_dense"
+    }
+  },
+  {
+    "pair_id": "author_9",
+    "style": "dram",
+    "gt_center_px": [
+      114.8,
+      556.9
+    ],
+    "ref_path": "./output/dram30/train/reference/00009.png",
+    "search_path": "./output/dram30/train/search/00009.png",
+    "noise_params": {
+      "preset_name": "dram_dense"
+    }
+  },
+  {
+    "pair_id": "author_10",
+    "style": "dram",
+    "gt_center_px": [
+      81.2,
+      151.8
+    ],
+    "ref_path": "./output/dram30/train/reference/00010.png",
+    "search_path": "./output/dram30/train/search/00010.png",
+    "noise_params": {
+      "preset_name": "dram_loose"
+    }
+  },
+  {
+    "pair_id": "author_11",
+    "style": "dram",
+    "gt_center_px": [
+      353.8,
+      486.6
+    ],
+    "ref_path": "./output/dram30/train/reference/00011.png",
+    "search_path": "./output/dram30/train/search/00011.png",
+    "noise_params": {
+      "preset_name": "dram_loose"
+    }
+  },
+  {
+    "pair_id": "author_12",
+    "style": "dram",
+    "gt_center_px": [
+      872.9,
+      139.0
+    ],
+    "ref_path": "./output/dram30/train/reference/00012.png",
+    "search_path": "./output/dram30/train/search/00012.png",
+    "noise_params": {
+      "preset_name": "dram_loose"
+    }
+  },
+  {
+    "pair_id": "author_13",
+    "style": "dram",
+    "gt_center_px": [
+      260.0,
+      419.6
+    ],
+    "ref_path": "./output/dram30/train/reference/00013.png",
+    "search_path": "./output/dram30/train/search/00013.png",
+    "noise_params": {
+      "preset_name": "dram_loose"
+    }
+  },
+  {
+    "pair_id": "author_14",
+    "style": "dram",
+    "gt_center_px": [
+      541.8,
+      101.4
+    ],
+    "ref_path": "./output/dram30/train/reference/00014.png",
+    "search_path": "./output/dram30/train/search/00014.png",
+    "noise_params": {
+      "preset_name": "dram_loose"
+    }
+  },
+  {
+    "pair_id": "author_15",
+    "style": "dram",
+    "gt_center_px": [
+      921.0,
+      838.2
+    ],
+    "ref_path": "./output/dram30/train/reference/00015.png",
+    "search_path": "./output/dram30/train/search/00015.png",
+    "noise_params": {
+      "preset_name": "dram_wide"
+    }
+  },
+  {
+    "pair_id": "author_16",
+    "style": "dram",
+    "gt_center_px": [
+      764.5,
+      730.9
+    ],
+    "ref_path": "./output/dram30/train/reference/00016.png",
+    "search_path": "./output/dram30/train/search/00016.png",
+    "noise_params": {
+      "preset_name": "dram_wide"
+    }
+  },
+  {
+    "pair_id": "author_17",
+    "style": "dram",
+    "gt_center_px": [
+      330.6,
+      208.5
+    ],
+    "ref_path": "./output/dram30/train/reference/00017.png",
+    "search_path": "./output/dram30/train/search/00017.png",
+    "noise_params": {
+      "preset_name": "dram_wide"
+    }
+  },
+  {
+    "pair_id": "author_18",
+    "style": "dram",
+    "gt_center_px": [
+      835.2,
+      107.7
+    ],
+    "ref_path": "./output/dram30/train/reference/00018.png",
+    "search_path": "./output/dram30/train/search/00018.png",
+    "noise_params": {
+      "preset_name": "dram_wide"
+    }
+  },
+  {
+    "pair_id": "author_19",
+    "style": "dram",
+    "gt_center_px": [
+      618.8,
+      470.7
+    ],
+    "ref_path": "./output/dram30/train/reference/00019.png",
+    "search_path": "./output/dram30/train/search/00019.png",
+    "noise_params": {
+      "preset_name": "dram_wide"
+    }
+  },
+  {
+    "pair_id": "author_20",
+    "style": "dram",
+    "gt_center_px": [
+      390.1,
+      148.7
+    ],
+    "ref_path": "./output/dram30/train/reference/00020.png",
+    "search_path": "./output/dram30/train/search/00020.png",
+    "noise_params": {
+      "preset_name": "dram_compact"
+    }
+  },
+  {
+    "pair_id": "author_21",
+    "style": "dram",
+    "gt_center_px": [
+      626.2,
+      432.2
+    ],
+    "ref_path": "./output/dram30/train/reference/00021.png",
+    "search_path": "./output/dram30/train/search/00021.png",
+    "noise_params": {
+      "preset_name": "dram_compact"
+    }
+  },
+  {
+    "pair_id": "author_22",
+    "style": "dram",
+    "gt_center_px": [
+      584.5,
+      796.2
+    ],
+    "ref_path": "./output/dram30/train/reference/00022.png",
+    "search_path": "./output/dram30/train/search/00022.png",
+    "noise_params": {
+      "preset_name": "dram_compact"
+    }
+  },
+  {
+    "pair_id": "author_23",
+    "style": "dram",
+    "gt_center_px": [
+      670.7,
+      420.3
+    ],
+    "ref_path": "./output/dram30/train/reference/00023.png",
+    "search_path": "./output/dram30/train/search/00023.png",
+    "noise_params": {
+      "preset_name": "dram_compact"
+    }
+  },
+  {
+    "pair_id": "author_24",
+    "style": "dram",
+    "gt_center_px": [
+      222.4,
+      172.9
+    ],
+    "ref_path": "./output/dram30/train/reference/00024.png",
+    "search_path": "./output/dram30/train/search/00024.png",
+    "noise_params": {
+      "preset_name": "dram_compact"
+    }
+  },
+  {
+    "pair_id": "author_25",
+    "style": "dram",
+    "gt_center_px": [
+      868.7,
+      279.7
+    ],
+    "ref_path": "./output/dram30/train/reference/00025.png",
+    "search_path": "./output/dram30/train/search/00025.png",
+    "noise_params": {
+      "preset_name": "dram_legacy"
+    }
+  },
+  {
+    "pair_id": "author_26",
+    "style": "dram",
+    "gt_center_px": [
+      284.1,
+      590.4
+    ],
+    "ref_path": "./output/dram30/train/reference/00026.png",
+    "search_path": "./output/dram30/train/search/00026.png",
+    "noise_params": {
+      "preset_name": "dram_legacy"
+    }
+  },
+  {
+    "pair_id": "author_27",
+    "style": "dram",
+    "gt_center_px": [
+      762.5,
+      333.7
+    ],
+    "ref_path": "./output/dram30/train/reference/00027.png",
+    "search_path": "./output/dram30/train/search/00027.png",
+    "noise_params": {
+      "preset_name": "dram_legacy"
+    }
+  },
+  {
+    "pair_id": "author_28",
+    "style": "dram",
+    "gt_center_px": [
+      851.5,
+      352.2
+    ],
+    "ref_path": "./output/dram30/train/reference/00028.png",
+    "search_path": "./output/dram30/train/search/00028.png",
+    "noise_params": {
+      "preset_name": "dram_legacy"
+    }
+  },
+  {
+    "pair_id": "author_29",
+    "style": "dram",
+    "gt_center_px": [
+      660.4,
+      294.3
+    ],
+    "ref_path": "./output/dram30/train/reference/00029.png",
+    "search_path": "./output/dram30/train/search/00029.png",
+    "noise_params": {
+      "preset_name": "dram_legacy"
+    }
+  }
+]
