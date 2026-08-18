@@ -41,10 +41,10 @@ The trained V3 model is located in:
 ./hybrid_ncc_ml_model_weights/
 ```
 
-Run the V3-only benchmark with:
+Run the V3 with:
 
 ```bash
-python3 benchmark_a_vs_v3.py \
+python3 benchmark_v3.py \
     --dataset-dir ./output/dram30/train/ \
     --model ./hybrid_ncc_ml_model_weights/ranker_v3.pt \
     --config ./hybrid_ncc_ml_model_weights/ranker_v3_config.json \
