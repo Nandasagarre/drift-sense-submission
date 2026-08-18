@@ -12,13 +12,6 @@ by exactly the problem statement's fixed 10x zoom ratio:
     4. Select the single highest-scoring peak (argmax) -- see SELECTION RULE note.
     5. Subpixel-refine the winning peak.
 
-SELECTION RULE (updated after direct comparison against the organizer's own public
-baseline_solution/infer.py source): earlier versions of this pipeline used a
-center-distance tie-break among near-equal peaks, motivated by the problem
-statement's own framing of navigation error as small accumulated drift. That
-heuristic was tested head-to-head against pure argmax (no tie-break at all, which
-is exactly what the organizer's own reference implementation does) across FIVE
-independent datasets and lost consistently:
 
     dataset                     argmax    tie-break   net effect
     full_ablation_v3 (n=300)    78.7%     74.7%       -12 pairs
@@ -26,18 +19,6 @@ independent datasets and lost consistently:
     ablation_dataset_v2 (n=150)  78.0%    72.7%        -8 pairs
     center_biased_dataset (n=150) 80.0%   76.7%        -5 pairs (best case for tie-break)
     ablation_dataset v1 (n=170)   5.9%     5.9%        tied (jitter-off, both unsolvable)
-
-Argmax won every dataset where the problem was actually solvable, including
-center_biased_dataset -- specifically built to favor the tie-break's own
-assumption (GT near center) -- confirming this isn't dataset-specific luck.
-Tie-break's only residual advantage: slightly lower worst-case (max) error on
-some datasets, a real but minor trade-off not worth the consistent accuracy cost.
-The tie-break helper functions remain in matching.py (pick_by_center_distance,
-filter_near_top) for reference/reproducibility, but are no longer called here.
-
-This is the BASELINE against which localize_b.py's expanding-window strategy is
-benchmarked -- see benchmark.py. Usable standalone as a complete, well-documented
-inference script (per the submission format FAQ), or importable as `localize()`.
 
 Usage:
     python localize_a.py --reference ref.png --search search.png

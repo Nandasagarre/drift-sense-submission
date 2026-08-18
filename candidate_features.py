@@ -1,18 +1,9 @@
 """
 candidate_features.py
 ========================
-Drift-Sense hackathon -- shared candidate feature extraction for the A+ranker
-architecture. Used by BOTH training and inference, so there is exactly one
-definition of what a "candidate feature vector" means -- no risk of train/
-inference skew.
+Drift-Sense hackathon -- extract the 10 engineered features used by the ranker. The ranker is a
+small MLP that takes these 10 features as input and outputs a single confidence score.
 
-The ranker's job is narrow and specific: given one candidate peak from A's own
-NCC surface, estimate how likely it is to be the true GT location. It never
-sees raw pixels; it sees the same kind of engineered signals this whole
-project already validated as carrying real information (curvature, symmetry,
-anisotropy, basin geometry, center distance, rank) -- reused directly rather
-than re-derived, so this stays consistent with everything already proven out
-for Variant F.
 
 FEATURES (in this exact order -- FEATURE_NAMES is the source of truth):
     ncc_score             -- raw NCC correlation score at this candidate

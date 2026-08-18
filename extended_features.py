@@ -2,15 +2,7 @@
 extended_features.py
 =======================
 Drift-Sense hackathon -- wraps candidate_features.py's standard 10-feature
-extraction, adding scale_score_std as an 11th feature: the standard
-deviation of NCC score at each candidate's exact physical location across
-5 nearby zoom scales (9.5x-10.5x). Validated this session: 69-81% GT-favor
-rate in head-to-head oracle comparisons across all 5 datasets, but proven
-UNSAFE as a standalone selector or near-tie tiebreak (net negative in every
-configuration tested, due to base-rate imbalance). This is exactly why
-it's being integrated as a TRAINED RANKER INPUT behind the existing
-NCC-confidence veto gate, not as a standalone rule.
-
+extraction, adding scale_score_std as an 11th feature
 Computed only for the top-K candidates by NCC score (default K=50,
 matching the coverage validated earlier: K=50 reaches 72.4% of genuine
 ranking-failure cases at 69.1% GT-win rate). Candidates beyond K get a

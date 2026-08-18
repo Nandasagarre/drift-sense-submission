@@ -1,10 +1,6 @@
 """
 matching.py
 ===========
-Drift-Sense hackathon -- shared classical-CV matching core used by BOTH localize_a.py
-(full FFT-NCC baseline) and localize_b.py (expanding-window FFT-NCC). Deliberately
-factored out so any accuracy difference between variants A and B is attributable to
-the SEARCH STRATEGY, not to subtly different correlation/refinement implementations.
 
 Core pipeline this module provides:
     1. downscale_reference()   -- apply the known 10x zoom ratio before matching

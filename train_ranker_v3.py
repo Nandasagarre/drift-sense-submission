@@ -3,18 +3,6 @@ train_ranker_v3.py
 ======================
 Drift-Sense hackathon -- V3 candidate ranker.
 
-Uses extended_features.py's 11-feature extraction
-(original 10 + scale_score_std).
-
-Dataset split:
-    GROUPED train / validation / test
-
-Important:
-    - Groups are split, not individual pairs.
-    - Validation is used for model selection / early stopping.
-    - Test is NEVER used during training or model selection.
-    - Test is evaluated exactly once after the model is frozen.
-
 Evaluation reports THREE different metrics:
 
 1. Candidate coverage
@@ -32,8 +20,6 @@ Relationship:
 
     end_to_end = candidate_coverage * conditional_top1
 
-This distinction is important because a ranker cannot recover a GT
-location if candidate generation never produced a candidate near GT.
 
 Usage:
     python train_ranker_v3.py \
