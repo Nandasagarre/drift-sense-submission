@@ -120,6 +120,22 @@ Each architecture is evaluated across four polygon-generation rotation condition
 
 Thus, the benchmark specifically tests whether the NCC + V3 pipeline remains effective across different DRAM layout geometries and small layout-level rotation variations.
 
+
+### V3 Training Datasets
+
+V3 was trained and evaluated across progressively more challenging synthetic datasets, each created to isolate a specific failure mode of NCC-based localization.
+
+| Dataset           | Purpose                                                                                                         |  DRAM | FinFET |   Overall |
+| ----------------- | --------------------------------------------------------------------------------------------------------------- | ----: | -----: | --------: |
+| **Author**        | Baseline dataset representing the original image-generation conditions.                                         | 82.0% |  65.0% | **74.4%** |
+| **Centre Bias**   | Tests the effect of spatial distribution / centre-biased placement of targets.                                  | 75.3% |  68.9% | **72.9%** |
+| **Full Ablation**   | Tests robustness when charging and other image variations are confounded together in the same image.            | 78.7% |  43.6% | **63.8%** |
+| **Confounded**  | Sweeps the relevant image-generation factors to determine where the localization pipeline begins to break down. | 23.9% |   2.9% | **11.4%** |
+
+> **A = baseline NCC method; V3 = NCC + ML ranker.**
+
+The datasets were deliberately separated to distinguish **normal performance**, **spatial-prior effects**, **confounded imaging effects**, and **systematic failure limits** rather than treating all degradation as a single problem.
+
 ## Project Scope
 
 This repository currently focuses on the **NCC + V3 ML localization pipeline** and its benchmark evaluation.
