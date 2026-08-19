@@ -41,7 +41,7 @@ The trained V3 model is located in:
 ./hybrid_ncc_ml_model_weights/
 ```
 
-Run the V3 with:
+To Run the code use
 
 ```bash
 python3 benchmark_v3.py \
@@ -51,6 +51,24 @@ python3 benchmark_v3.py \
     --tolerance 5.0 \
     --method V3
 ```
+
+And run for plots 
+
+```bash
+python plot.py --csv benchmark_results.csv
+```
+[SKIP] PR curve for noise=finfet_14nm: no positive samples.
+[OK]   plots/01_pr_curve_by_noise.png
+[OK]   plots/02_baseline_score_by_noise.png
+[OK]   plots/03_v3_error_distribution.png
+[OK]   plots/04_error_vs_baseline_score.png
+[OK]   plots/05_accuracy_by_noise.png
+[OK]   plots/06_runtime_by_noise.png
+[OK]   plots/07_spatial_error_vectors.png
+[SKIP] Missing columns: polygon_rotation_deg
+[SKIP] Missing columns: architecture
+
+
 
 ### Parameters
 

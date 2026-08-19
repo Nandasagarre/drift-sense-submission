@@ -4,7 +4,7 @@ plot.py
 Generate diagnostic plots from the V3 benchmark CSV.
 
 Usage:
-    python plot.py --csv v3_results.csv
+    python plot.py --csv benchmark_results.csv
 
 The script is intentionally defensive:
 - A plot is generated only if the required columns/data exist.
@@ -187,7 +187,7 @@ def plot_score_by_noise(df, outdir):
 
     ax.boxplot(
         groups,
-        labels=labels,
+        tick_labels=labels,
         showmeans=True,
     )
 
@@ -404,7 +404,7 @@ def plot_error_by_rotation(df, outdir):
 
     for rotation, g in data.groupby("rotation", sort=True):
         groups.append(g["error"].to_numpy())
-        labels.append(str(rotation))
+        tick_labels.append(str(rotation))
 
     fig, ax = plt.subplots(figsize=(8, 6))
 

@@ -590,7 +590,7 @@ def main():
             )
 
         model, mu, sd, top_k_scale = (
-            localize_best_v3.load_ranker(
+            localize_v3.load_ranker(
                 args.model,
                 args.config,
                 device,
