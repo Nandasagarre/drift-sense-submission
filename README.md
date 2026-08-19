@@ -143,10 +143,12 @@ Each architecture is evaluated across four polygon-generation rotation condition
 Thus, the benchmark specifically tests whether the NCC + V3 pipeline remains effective across different DRAM layout geometries and small layout-level rotation variations.
 
 ### Failure cases 
-1. FinFET patterns create multiple visually similar NCC peaks.
+1. FinFET patterns, in case smaller dies/design,  create multiple visually similar NCC peaks.
 This causes false spatial locks, where the predicted location can be hundreds of pixels from GT.
 In our candidate-generation test, Recall@100 = 0% on the tested difficult set — the GT wasn't even present among the top 100 NCC candidates.
 ![alt text](plots/image.png)
+Practically in certain process inspection after the CMP fills the die margin pitchs would'nt be clearly visisble as in above image, it might look like something similar as in below ones
+![alt text](plots/image4.png)
 
 2. Effects such as charging, dose/noise, and other appearance changes occurring together can substantially degrade matching.
 
