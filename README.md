@@ -1,4 +1,4 @@
-Yes. Since this GitHub repo is specifically **NCC + ML**, with **V3 as the ML alias**, I'd keep the README focused and not dump the whole experimental history into it.
+In SEM wafer inspection, absolute brightness encodes critical information about material composition and voltage contrast which ZNCC inadvertently erases by subtracting the local mean. Furthermore, ZNCC heavily amplifies random shot noise in flat, unpatterned wafer regions, whereas NCC properly suppresses these areas by scaling with raw image energy. This makes NCC highly stable and precise under the strictly controlled, non-optical illumination of an electron microscope.
 
 # NCC + ML
 
