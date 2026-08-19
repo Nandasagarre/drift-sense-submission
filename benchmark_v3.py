@@ -33,7 +33,7 @@ import numpy as np
 import torch
 from PIL import Image
 
-import localize_best_v3
+import localize_v3
 from train_ranker_v3 import grouped_split
 
 
@@ -151,7 +151,7 @@ def run_v3(
     tolerance,
 ):
 
-    rv3 = localize_best_v3.localize(
+    rv3 = localize_v3.localize(
         ref,
         search,
         model,
