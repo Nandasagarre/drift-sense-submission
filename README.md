@@ -157,7 +157,7 @@ Overall: 11.4%
 ![alt text](plots/image-1.png)
 
 3. Polygon rotation reduce the over accuracy from 80 ish to 66 percent, added with noises (edge rounding) lead to 0% accuracy
-![alt text](plots/image.png)
+![alt text](plots/image3.png)
 
 ### V3 Training Datasets
 
