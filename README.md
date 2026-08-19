@@ -54,21 +54,6 @@ python3 benchmark_v3.py \
 
 And run for plots 
 
-```bash
-python plot.py --csv benchmark_results.csv
-```
-[SKIP] PR curve for noise=finfet_14nm: no positive samples.
-[OK]   plots/01_pr_curve_by_noise.png
-[OK]   plots/02_baseline_score_by_noise.png
-[OK]   plots/03_v3_error_distribution.png
-[OK]   plots/04_error_vs_baseline_score.png
-[OK]   plots/05_accuracy_by_noise.png
-[OK]   plots/06_runtime_by_noise.png
-[OK]   plots/07_spatial_error_vectors.png
-[SKIP] Missing columns: polygon_rotation_deg
-[SKIP] Missing columns: architecture
-
-
 
 ### Parameters
 
@@ -121,6 +106,20 @@ Median score: 0.004149
 
 The benchmark therefore achieves **83.33% localization accuracy within 5 px**, with **25/30 predictions within 5 px** of the ground-truth location.
 
+```bash
+python plot.py --csv benchmark_results.csv
+```
+[SKIP] PR curve for noise=finfet_14nm: no positive samples.
+[OK]   plots/01_pr_curve_by_noise.png
+[OK]   plots/02_baseline_score_by_noise.png
+[OK]   plots/03_v3_error_distribution.png
+[OK]   plots/04_error_vs_baseline_score.png
+[OK]   plots/05_accuracy_by_noise.png
+[OK]   plots/06_runtime_by_noise.png
+[OK]   plots/07_spatial_error_vectors.png
+[SKIP] Missing columns: polygon_rotation_deg
+[SKIP] Missing columns: architecture
+
 Dataset
 
 The benchmark dataset is located at:
@@ -143,6 +142,22 @@ Each architecture is evaluated across four polygon-generation rotation condition
 
 Thus, the benchmark specifically tests whether the NCC + V3 pipeline remains effective across different DRAM layout geometries and small layout-level rotation variations.
 
+### Failure cases 
+1. FinFET patterns create multiple visually similar NCC peaks.
+This causes false spatial locks, where the predicted location can be hundreds of pixels from GT.
+In our candidate-generation test, Recall@100 = 0% on the tested difficult set — the GT wasn't even present among the top 100 NCC candidates.
+![alt text](plots/image.png)
+
+2. Effects such as charging, dose/noise, and other appearance changes occurring together can substantially degrade matching.
+
+Performance collapsed to:
+DRAM: 23.9%
+FinFET: 2.9%
+Overall: 11.4%
+![alt text](plots/image-1.png)
+
+3. Polygon rotation reduce the over accuracy from 80 ish to 66 percent, added with noises (edge rounding) lead to 0% accuracy
+![alt text](plots/image.png)
 
 ### V3 Training Datasets
 
