@@ -72,11 +72,16 @@ Correct localization is defined using a **5.0 px tolerance**.
 
 ```text
 Pairs       : 30
-Tolerance   : 5.00 px
+Tolerance   : 5.00px
 Accuracy    : 83.33%
-Mean error  : 22.79 px
-Median error: 0.65 px
-Max error   : 232.02 px
+Mean error  : 22.79px
+Median error: 0.65px
+Max error   : 232.02px
+Mean time   : 376.58 ms/pair
+Median time : 374.28 ms/pair
+Max time    : 396.17 ms/pair
+Mean score  : 0.004887
+Median score: 0.004149
 ```
 
 ### Accuracy by Style
