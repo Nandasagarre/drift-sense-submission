@@ -150,6 +150,10 @@ In our candidate-generation test, Recall@100 = 0% on the tested difficult set â€
 Practically in certain process inspection after the CMP fills the die margin pitchs would'nt be clearly visisble as in above image, it might look like something similar as in below ones
 ![alt text](plots/image4.png)
 
+![alt text](plots/image5.png)
+
+![alt text](image8.png)
+
 2. Effects such as charging, dose/noise, and other appearance changes occurring together can substantially degrade matching.
 
 Performance collapsed to:
@@ -157,6 +161,8 @@ DRAM: 23.9%
 FinFET: 2.9%
 Overall: 11.4%
 ![alt text](plots/image-1.png)
+![alt text](plots/image6.png)
+![alt text](image7.png)
 
 3. Polygon rotation reduce the over accuracy from 80 ish to 66 percent, added with noises (edge rounding) lead to 0% accuracy
 ![alt text](plots/image3.png)
