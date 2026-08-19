@@ -33,7 +33,7 @@ The ranker uses 11 features derived from the NCC candidate set, including NCC sc
 
 The model is trained as a listwise ranker, where candidates belonging to the same reference/search pair are evaluated against each other and the model learns to place the ground-truth candidate above competing candidates.
 
-## Running the Benchmark
+## Running this code!!
 
 The trained V3 model is located in:
 
@@ -52,7 +52,7 @@ python3 benchmark_v3.py \
     --method V3
 ```
 
-And run for plots 
+Results:
 
 
 ### Parameters
@@ -106,8 +106,10 @@ Median score: 0.004149
 
 The benchmark therefore achieves **83.33% localization accuracy within 5 px**, with **25/30 predictions within 5 px** of the ground-truth location.
 
+Analysis:
+
 ```bash
-python plot.py --csv benchmark_results.csv
+python plot.py --csv benchmark_results.csv   (PR and noise curve saves as .png inside folder ./plots)
 ```
 [SKIP] PR curve for noise=finfet_14nm: no positive samples.
 [OK]   plots/01_pr_curve_by_noise.png
